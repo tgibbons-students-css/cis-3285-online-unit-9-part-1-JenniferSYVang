@@ -25,6 +25,25 @@ namespace SingleResponsibilityPrinciple
             return tradeData;
         }
 
+        // code below solves Request  407 - "As a trader I want to be able to read trades from the companies new web service provider so I can enter trades from different apps."
+        public IEnumerable<string> ReadURLTradeData(string URL)
+        {
+            var tradeData = new List<string>();
+
+            // create a web client and use it to read the file stored at the given URL
+            var client = new WebClient();
+            using (var stream = client.OpenRead(URL))
+            using (var reader = new StreamReader(stream))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    tradeData.Add(line);
+                }
+            }
+            return tradeData;
+        }
+
         private IEnumerable<TradeRecord> ParseTrades(IEnumerable<string> tradeData)
         {
             var trades = new List<TradeRecord>();
@@ -157,6 +176,13 @@ namespace SingleResponsibilityPrinciple
             StoreTrades(trades);
         }
 
+        // code below is used to solve Request 407: Read the trades from a remote call to a web service
+        public void ProcessTrades(string stream)
+        {
+            var lines = ReadURLTradeData(stream);
+            var trades = ParseTrades(lines);
+            StoreTrades(trades);
+        }
 
     }
 }

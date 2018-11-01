@@ -14,7 +14,8 @@ namespace SingleResponsibilityPrinciple
             var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("SingleResponsibilityPrinciple.trades4.txt");
 
             var tradeProcessor = new TradeProcessor();
-            tradeProcessor.ProcessTrades(tradeStream);
+            //tradeProcessor.ProcessTrades(tradeStream);  // this calls our method that takes in a stream
+            tradeProcessor.ProcessTrades("http://faculty.css.edu/tgibbons/trades4.txt"); // this calls our method that takes in a string
 
             Console.ReadKey();
         }
