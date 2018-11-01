@@ -8,3 +8,14 @@ C:\Users\tgibbons\Source\Repos\cis-3285-unit-9-practice-tgibbons-css\SingleRespo
 C:\Users\tgibbons\Source\Repos\cis-3285-unit-9-practice-tgibbons-css\SingleResponsibilityPrincipleTests\obj\Debug\SingleResponsibilityPrincipleTests.csproj.CoreCompileInputs.cache
 C:\Users\tgibbons\Source\Repos\cis-3285-unit-9-practice-tgibbons-css\SingleResponsibilityPrincipleTests\obj\Debug\SingleResponsibilityPrincipleTests.dll
 C:\Users\tgibbons\Source\Repos\cis-3285-unit-9-practice-tgibbons-css\SingleResponsibilityPrincipleTests\obj\Debug\SingleResponsibilityPrincipleTests.pdb
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\bin\Debug\SingleResponsibilityPrincipleTests.dll
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\bin\Debug\SingleResponsibilityPrincipleTests.pdb
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\bin\Debug\SingleResponsibilityPrinciple.exe
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\bin\Debug\SingleResponsibilityPrinciple.pdb
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\bin\Debug\SingleResponsibilityPrinciple.exe.config
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\obj\Debug\SingleResponsibilityPrincipleTests.csprojAssemblyReference.cache
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\obj\Debug\SingleResponsibilityPrincipleTests.csproj.CoreCompileInputs.cache
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\obj\Debug\SingleResponsibilityPrincipleTests.csproj.CopyComplete
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\obj\Debug\SingleResponsibilityPrincipleTests.dll
+C:\Users\Jenni\Source\Repos\cis-3285-online-unit-9-part-1-JenniferSYVang\SingleResponsibilityPrincipleTests\obj\Debug\SingleResponsibilityPrincipleTests.pdb

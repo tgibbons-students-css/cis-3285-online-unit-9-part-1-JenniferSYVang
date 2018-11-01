@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace SingleResponsibilityPrinciple
 {
@@ -67,6 +68,16 @@ namespace SingleResponsibilityPrinciple
                 LogMessage("WARN", " Trade amount on line {0} not a valid integer: '{1}'", currentLine, fields[1]);
                 return false;
             }
+            else if (int.Parse(fields[1]) < 1000) // solves Request 403 - "As a Trader, I want to prevent dangerous trades so that one typo doesn't ruin the company." 
+            {
+                LogMessage("WARN", " Trade amount on line {0} needs to be at least 1000: '{1}'", currentLine, fields[1]);
+                return false;
+            }
+            else if (int.Parse(fields[1]) > 100000) // Request 403 - "As a Trader, I want to prevent dangerous trades so that one typo doesn't ruin the company." 
+            {
+                LogMessage("WARN", " Trade amount on line {0} needs to be less than or equal to 100000: '{1}'", currentLine, fields[1]);
+                return false;
+            }
 
             decimal tradePrice;
             if (!decimal.TryParse(fields[2], out tradePrice))
@@ -81,6 +92,14 @@ namespace SingleResponsibilityPrinciple
         private void LogMessage(string msgType, string message, params object[] args)
         {
             Console.WriteLine(msgType+ " :" +message, args);
+
+            // the following code will solve Request 405 - "As a manager, I want to easily monitor the trading errors my traders make so I can provide them better training to avoid errors."
+            using (StreamWriter w = File.AppendText("log.txt")) // in SingleResponsibilityPrincipleTests/bin/Debug
+            {
+                w.WriteLine("<log><type>" + msgType + "</type><message>" + message + "</message></log>", args);
+            }
+
+
         }
 
         private TradeRecord MapTradeDataToTradeRecord(string[] fields)
